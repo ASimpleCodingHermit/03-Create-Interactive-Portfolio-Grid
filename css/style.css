@@ -31,6 +31,7 @@ body {
 .container {
   width: 90vw;
   margin: 0 auto;
+  box-shadow: 0px 0px 35px 8px rgba(22, 22, 22, 0);
 }
 
 .grid {
@@ -75,7 +76,7 @@ body {
   background-color: rgba(24, 104, 174, 1);
   color: #fff;
   font-size: 16px;
-  opacity: 1;
+  opacity: 0;
   z-index: 0;
   top: 0;
   left: 0;
@@ -147,4 +148,23 @@ body {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+}
+
+/* Click Effect */
+.grid:nth-child(3n+1) .details:target {
+  opacity: 1;
+  left: 100%;
+  z-index: 9;
+}
+
+.grid:nth-child(3n+2) .details:target {
+  opacity:1;
+  left: 100%;
+  z-index: 9;
+}
+
+.grid:nth-child(3n+3) .details:target {
+  opacity: 1;
+  left: -100%;
+  z-index: 9;
 }
