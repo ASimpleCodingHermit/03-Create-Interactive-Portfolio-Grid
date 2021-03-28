@@ -1,3 +1,41 @@
-#sectionOne {
-  background-image: url('images/snowy-mountain.jpg');
+#sectionOne,
+#sectionTwo,
+#sectionThree,
+#sectionFour,
+#sectionFive,
+#sectionSix,
+#sectionSeven,
+#sectionEight,
+#sectionNine {
+  background-image: url('/images/placeholder.png');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(142deg, rgba(24, 104, 174, 1), 29%, rgba(55, 184, 230, 1) 100%);
+}
+
+.main {
+  margin-top: 40px;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.grid {
+  position: relative;
+  width: 33.33%;
+  float: left;
+  height: 200px;
+  color: #fff;
 }
